@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+      <meta charset="UTF-8">
+      <script src="https://unpkg.com/htmx.org@2.0.4"></script></script>
+  </head>
+
+  <body>
+    <button hx-get="/update" hx-target="#data" hx-swap="innerHTML">Update</button>
+    <button hx-get="/backwards" hx-target="#data" hx-swap="innerHTML">Backwards</button>
+    <button hx-get="/until_line" hx-target="#data" hx-swap="innerHTML">Until line</button>
+
+    <p id="data">Replacement</p>
+  </body>
+</html>
